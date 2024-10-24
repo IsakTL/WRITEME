@@ -33,9 +33,6 @@ function writeToFile(fileName, data) {
     fs.writeFile();
 }
 
-// Starter code, unused due to validate() in inquirer
-//function fieldIsEmpty() {}
-
 // Constructor for questions within getResponses
 class Question {
     //validate is never read but this function doesn't work without it
@@ -65,20 +62,14 @@ function buildQuestions() {
     return formattedQuestions;
 }
 
+
+// Prompts the user for each question in allQuestions and returns the generated text plain, as well as generating the file.
 function getResponses() {
     const allQuestions = buildQuestions();
     inquirer
-        .prompt([
-            // {
-            //     type: 'input',
-            //     message: questions[0],
-            //     name: 'title',
-            //     validate(input) {
-            //         return !!input.trim() || 'Please enter at least one non-whitespace character.'
-            //     }
-            // },
-            ...allQuestions
-        ])
+        .prompt(
+            allQuestions
+        )
         .then(response => {
             console.log(generateMarkdown(response));
         })
@@ -87,7 +78,7 @@ function getResponses() {
 
 // init initializes the app on call.
 function init() {
-    console.log(`Welcome to writeme, your easy README composer.`);
+    console.log(`Welcome to WRITEME, your easy README composer.`);
     getResponses();
 }
 
