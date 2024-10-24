@@ -29,8 +29,10 @@ const nameArray = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    fs.writeFile();
+function writeToFile(data) {
+    fs.writeFile('README.md', data, (error) => {
+        error?console.error(error):console.log('SUCCESS');
+    });
 }
 
 // Constructor for questions within getResponses
@@ -71,7 +73,9 @@ function getResponses() {
             allQuestions
         )
         .then(response => {
-            console.log(generateMarkdown(response));
+            const g = generateMarkdown(response);
+            console.log(g);
+            writeToFile(g);
         })
 }
 
