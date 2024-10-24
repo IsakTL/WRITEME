@@ -69,6 +69,7 @@ function generateMarkdown(data) {
 
   return `# ${data.title}
 ${renderLicenseBadge()}
+
 ${data.desc}
 
 ## Instructions
@@ -84,8 +85,8 @@ ${data.contr}
 ${data.tests}
 
 ## Contact
-* GitHub page: [${data.ghName}](https://github.com/${data.ghName})
-* Email: [${data.email}](mailto:${data.email})
+* GitHub page: [${data.ghName}](https://github.com/${data.ghName.replaceAll(/\s/g, "")})
+* Email: [${data.email}](mailto:${data.email.replaceAll(/\s/g, "")})
 
 ## License
 This project uses the ${data.license} license. For more information, visit: ${renderLicenseLink()}
