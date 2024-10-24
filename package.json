@@ -1,15 +1,15 @@
 {
-  "name": "static-site",
+  "name": "writeme",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Isak Larsson",
   "license": "ISC",
   "dependencies": {
     "inquirer": "8.2.4"
-  }
+  },
+  "description": "Easily write a README file with formatting and conventional structuring built-in."
 }
