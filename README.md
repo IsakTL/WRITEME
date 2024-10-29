@@ -1,4 +1,4 @@
-# e-bike-wrangler
+# e-bike-wrangler (EXAMPLE - overwritten by first run)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 This program, built for a coding bootcamp, allows a user to interact with certain vehicles in several different ways. It was intended as an exercise in the use of classes and interfaces within Typescript.
