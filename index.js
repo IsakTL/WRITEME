@@ -28,7 +28,7 @@ const nameArray = [
     `license`
 ];
 
-// TODO: Create a function to write README file
+// This writes the README file
 function writeToFile(data) {
     fs.writeFile('README.md', data, (error) => {
         error?console.error(error):console.log('SUCCESS');
