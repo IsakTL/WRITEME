@@ -1,4 +1,4 @@
-# Employee Tracker
+# EXAMPLE - overwritten by first run: e-bike-wrangler
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 This is a challenge assignment for a bootcamp, designed as an exercise in using PostgreSQL. It uses the inquirer package and node to allow a user to interact with a database of employees in various ways.
