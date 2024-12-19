@@ -11,7 +11,7 @@ const questions = [
     `How do you use it?`,
     `How, if at all, can others contribute?`,
     `What tests should be run, and what results are expected?`,
-    `Tell me a bit about you for Questions. What's your GitHub username?`,
+    `Tell me a bit about you. What's your GitHub username?`,
     `What's an email address at which a user can reach you?`,
     `Finally, select a license from this list, ordered from least to most restrictive:`
 ];
@@ -38,8 +38,8 @@ function writeToFile(data) {
 // Constructor for questions within getResponses
 class Question {
     //validate is never read but this function doesn't work without it
-    //How does this work?
-    constructor(type='input', message, name, validate, choices) {
+    // * Changed 'validate' to '_' to indicate that the variable is not used
+    constructor(type='input', message, name, _, choices) {
         this.type = type;
         this.message = message;
         this.name = name;
